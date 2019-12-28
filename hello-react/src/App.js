@@ -1,9 +1,20 @@
 import React from 'react';
-import './App.css';
 
 function App() {
-  const name = undefined;
-  return <div>{name || '리액트'}</div>;
+  const name ='리액트';
+  return(
+    <div
+      style={{
+        backgroundColor: 'black',
+        color: 'aqua',
+        fontSize: '48px',
+        fontWeight: 'bold',
+        padding: 16
+      }}
+      >
+        {name}
+      </div>
+  )
 }
 
 export default App;
