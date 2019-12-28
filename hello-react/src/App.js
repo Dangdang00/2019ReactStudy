@@ -10,7 +10,7 @@ function App() {
       <h2>코드</h2>
       <p>입니다.</p>
     </div>
-  );
+  )
 }
 
 export default App;
