@@ -1,11 +1,8 @@
 import React from "react";
-import React, { Component } from 'react';
+import MyComponent from './MyComponent'; {/* MyComponent컴포넌트를 불러와서 사용 */}
 
-class App extends Component {
-  render() {
-    const name = 'react';
-    return <div className="react">{name}</div>;
-  }
-}
+const App = () => {
+  return <MyComponent />;
+};
 
 export default App;
