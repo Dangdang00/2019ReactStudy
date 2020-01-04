@@ -1,8 +1,8 @@
 import React from "react";
-import MyComponent from './MyComponent'; {/* MyComponent컴포넌트를 불러와서 사용 */}
+import MyComponent from './MyComponent';
 
 const App = () => {
-  return <MyComponent />;
+  return <MyComponent name="다영"/>;
 };
 
 export default App;
