@@ -18,6 +18,7 @@ MyComponent.defaultProps = {
 MyComponent.propTypes = {
     name: PropTypes.string,
     favoriteNumber: PropTypes.number.isRequired
+    {/* 뒤에 isRequired를 붙여준다 */}
 };
 
 export default MyComponent;
