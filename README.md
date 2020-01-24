@@ -32,3 +32,4 @@
 * 2.6 정리
 
 ## 3장 컴포넌트
+* [3.1 클래스형 컴포넌트](https://github.com/Dangdang00/2019ReactStudy/issues/9)
