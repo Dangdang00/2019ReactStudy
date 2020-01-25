@@ -33,3 +33,5 @@
 
 ## 3장 컴포넌트
 * [3.1 클래스형 컴포넌트](https://github.com/Dangdang00/2019ReactStudy/issues/9)
+* [3.2 첫 컴포넌트 생성](https://github.com/Dangdang00/2019ReactStudy/issues/10)
+* [3.3 props](https://github.com/Dangdang00/2019ReactStudy/issues/11)
