@@ -41,3 +41,4 @@
   * [3.3.4 태그 사이의 내용을 보여주는 children](https://github.com/Dangdang00/2019ReactStudy/issues/11)
   * [3.3.5 비구조화 할당 문법을 통해 props 내부 값 추출하기](https://github.com/Dangdang00/2019ReactStudy/issues/11)
   * [3.3.6 propTypes를 통한 props 검증](https://github.com/Dangdang00/2019ReactStudy/issues/11)
+* 3.4 state
