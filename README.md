@@ -42,3 +42,4 @@
   * [3.3.5 비구조화 할당 문법을 통해 props 내부 값 추출하기](https://github.com/Dangdang00/2019ReactStudy/issues/11)
   * [3.3.6 propTypes를 통한 props 검증](https://github.com/Dangdang00/2019ReactStudy/issues/11)
 * 3.4 state
+* 3.5 state를 사용할 때 주의 사항
