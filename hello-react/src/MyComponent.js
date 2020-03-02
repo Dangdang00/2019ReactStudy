@@ -24,3 +24,4 @@ class MyComponent extends Component {
 };
 
 export default MyComponent;
+// MyComponent에서는 App 컴포넌트에서 전달받은 name 값을 직접 바꿀 수 없다.
