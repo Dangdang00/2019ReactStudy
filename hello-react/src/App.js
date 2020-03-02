@@ -1,9 +1,8 @@
 import React from "react";
-import MyComponent from './MyComponent';
+import Counter from './Counter'
 
 const App = () => {
-  return <MyComponent name="다영" favoriteNumber={7}>리액트</MyComponent>;
+  return <Counter />;
 };
 
 export default App;
-// App 컴포넌트에서 MyComponent를 사용할 떄 props를 바꾸어 주어야 값 변경 가능
