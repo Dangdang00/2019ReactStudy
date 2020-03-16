@@ -44,4 +44,8 @@
   * [3.3.7 클래스형 컴포넌트에서 props 사용하기](https://github.com/Dangdang00/2019ReactStudy/issues/11)
 * [3.4 state](https://github.com/Dangdang00/2019ReactStudy/issues/12)
   * [3.4.1 클래스형 컴포넌트의 state](https://github.com/Dangdang00/2019ReactStudy/issues/12)
+  * [3.4.2 함수형 컴포넌트에서 useState 사용하기](https://github.com/Dangdang00/2019ReactStudy/issues/12)
 * 3.5 state를 사용할 때 주의 사항
+* 3.6 정리
+
+## 4장 이벤트 핸들링
