@@ -22,6 +22,15 @@ class EventPractice extends Component {
                         }
                     }
                 />
+
+                <button onClick={
+                    () => {
+                        alert(this.state.message);
+                        this.setState({
+                            message: '' // 값을 공백으로 변경
+                        });
+                    }
+                }>확인</button>
             </div>
         );
     }
