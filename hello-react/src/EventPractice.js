@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class EventPractice extends Component {
     state = {
+        username: '',
         message: '' // state 초깃값 설정
     }
 
@@ -9,13 +10,15 @@ class EventPractice extends Component {
     // 이를 간단하게 하기 위해서 화살표 함수 형태로 메서드 정의
     handleChange = (e) => {
         this.setState({
-            message: e.target.value
+            [e.target.name]: e.target.value 
+            // 객체 안에서 key를 [ ]로 감싸면 그 안에 넣은 레퍼런스가 가리키는 실제 값이 key값으로 사용
         });
     }
 
     handleClick = () => {
-        alert(this.state.message);
+        alert(this.state.username + ': ' + this.state.message);
         this.setState({
+            username: '',
             message: ''
         });
     }
@@ -24,6 +27,13 @@ class EventPractice extends Component {
         return (
             <div>
                 <h1>이벤트 연습</h1>
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="사용자명"
+                    value={this.state.username}
+                    onChange={this.handleChange}
+                />
                 <input
                     type="text"
                     name="message"
