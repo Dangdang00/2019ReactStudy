@@ -5,21 +5,15 @@ class EventPractice extends Component {
         message: '' // state 초깃값 설정
     }
 
-    constructor(props) { // 함수를 바인딩하는 작업
-        super(props);
-        this.handleChange = this.handleChange.bind(this);
-        this.handClick = this.handleClick.bind(this);
-        // this를 컴포넌트 자신으로 제대로 가리키기 위해서는 메서드를 this와 바인딩해야함
-        // 바인딩 하지 않으면 this가 undefined를 가리키게 된다.
-    }
-
-    handleChange(e) {
+    // 메서드 바인딩 -> 생성자 메서드에서 해야함, 새 메서드를 만들때마다 constructor을 수정해야함
+    // 이를 간단하게 하기 위해서 화살표 함수 형태로 메서드 정의
+    handleChange = (e) => {
         this.setState({
             message: e.target.value
         });
     }
 
-    handleClick() {
+    handleClick = () => {
         alert(this.state.message);
         this.setState({
             message: ''
