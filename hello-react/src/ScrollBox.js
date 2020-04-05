@@ -16,6 +16,15 @@ class ScrollBox extends Component {
             background: 'linear-gradient(white, black)'
         }
 
+        scrollToBottom = () => {
+            const{ scrollHeight, clientHeight } = this.Box; // 비구조화 할당 문법 사용
+            /*  위의 코드와 같은 의미
+                const scrollHeight = this.box.scrollHeight;
+                const clientHeight = this.box.clientHeight;
+            */
+           this.box.scrollTop = scrollHeight - clientHeight;
+        }
+
         return (
             <div
                 style={style}
