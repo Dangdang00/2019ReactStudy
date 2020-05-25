@@ -35,3 +35,24 @@ yarn 설치 확인
 ```{bash}
 yarn --version
 ```
+
+#
+
+### 1.3 작업 환경 설정 (Windows 기준 설치)
+#### Node.js 설치하기
+[Node.js 사이트](https://nodejs.org/ko/download/)에서 Windows Installer를 설치한다.
+
+Node.js 설치 확인
+```{bash}
+$ node -v
+```  
+
+#
+
+#### yarn 설치하기
+[yarn 사이트](https://classic.yarnpkg.com/en/docs/install#windows-stable)에서 Download Installer버튼을 눌러 yarn을 설치한다.
+
+yarn 설치 확인
+```{bash}
+yarn --version
+```
