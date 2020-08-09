@@ -18,8 +18,16 @@ const IterationSample = () => {
         setNextId(nextId + 1); // nextId값에 1을 더해준다.
         setNames(nextNames); // names값을 업데이트한다.
         setInputText(''); // inputText를 비운다.
-    }
-    const nameList = names.map(name => <li key={name.id}>{name.text}</li>);
+    };
+    const onRemove = id => {
+        const nextNames = names.filter(name => name.id !== id);
+        setNames(nextNames);
+    };
+    const nameList = names.map(name => (
+        <li key={name.id} onDoubleClick={() => onRemove(name.id)}>
+            {name.text}
+        </li>
+    ));
     return (
         <>
             <input value={inputText} onChange={onChange} />
