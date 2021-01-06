@@ -17,17 +17,19 @@ const NewsListBlock = styled.div`
   }
 `
 
-const NewsList = () => {
+const NewsList = ({ category }) => {
   const [articles,  setArticles] = useState(null)
   const [isLoading ,setLoading] = useState(false)
+  const API_KEY = 'YOUR_API_KEY'
 
   useEffect(() => {
     // async를 사용하는 함수는 따로 선언함
     const fetchData = async () => {
       setLoading(true)
       try {
+        const query = category === 'all' ? '' : `&category=${category}`
         const response = await axios.get(
-          'https://newsapi.org/v2/top-headlines?country=kr&apiKey=YOUR_API_KEY' 
+          `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=${API_KEY}`
         )
         setArticles(response.data.articles)
       } catch(e) {
@@ -36,7 +38,7 @@ const NewsList = () => {
       setLoading(false)
     }
     fetchData()
-  }, [])
+  }, [category])
 
   // 대기 중일 때
   if (isLoading) {
